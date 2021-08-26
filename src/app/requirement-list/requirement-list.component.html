@@ -1,0 +1,23 @@
+<h2>Requirement List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Resource Id</th>
+            <th> Category</th>
+            <th> Type</th>
+            <th> Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let requirement of requirements">
+            <td>{{ requirement.resId}}</td>
+            <td>{{ requirement.category}}</td>
+            <td>{{ requirement.type}}</td>
+            <td>
+                <button (click) = "updateRequirement(requirement.resId)" class = "btn btn-info"> Update</button>
+
+            </td>
+        </tr>
+    </tbody>
+
+</table>
